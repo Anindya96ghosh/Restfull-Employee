@@ -29,4 +29,8 @@ public class ServiceImpl implements Service {
 		
 	}
 
+	public void updateEmployee(Employee emp) {
+		dao.updateEmployee(emp);
+	}
+
 }

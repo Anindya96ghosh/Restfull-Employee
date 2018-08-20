@@ -25,10 +25,25 @@ public class DaoImpl implements Dao {
 		for(Employee emp:set)
 		{
 			if(emp.getEmpID()==empId)
+			{
+				System.out.println("employee Id "+empId);
 				set.remove(emp);
-				
+				break;
+			}	
 		}
 		
+	}
+
+	public void updateEmployee(Employee emp) {
+		
+		for(Employee employee:set)
+		{
+			if(emp.getEmpID()==employee.getEmpID())
+			{
+				set.remove(employee);
+				set.add(emp);
+			}	
+		}
 	}
 
 }
